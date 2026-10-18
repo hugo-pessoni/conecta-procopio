@@ -4,6 +4,8 @@ Website de uma ONG (fictícia) de **inclusão digital** em Cornélio Procópio �
 
 🔗 **Acesse o site:** https://hugo-pessoni.github.io/conecta-procopio/
 
+🎬 **Vídeo de apresentação:** https://youtu.be/QDiKWu-luj4
+
 ## 📌 Sobre o projeto
 
 Muitas famílias e escolas da região ainda não têm computador em casa ou não sabem usar a tecnologia no dia a dia. Ao mesmo tempo, empresas e pessoas descartam equipamentos que ainda funcionam. A **Conecta Procópio** une as duas pontas:
