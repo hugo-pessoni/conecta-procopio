@@ -1,0 +1,421 @@
+/* =========================================
+   Conecta Procópio - folha de estilo principal
+   ========================================= */
+
+/* Cores usadas:
+   azul escuro  #14213D
+   amarelo      #FCA311
+   verde-água   #2A9D8F
+   coral        #E76F51
+   cinza claro  #F1F5F9
+   texto        #333333
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  color: #333333;
+  background-color: #FFFFFF;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #14213D;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.6em;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin-bottom: 8px;
+}
+
+a {
+  color: #2A9D8F;
+}
+
+a:hover {
+  color: #E76F51;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ---------- Cabeçalho e menu ---------- */
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 12px 5%;
+  background-color: #14213D;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.4em;
+  color: #FFFFFF;
+}
+
+.logo img {
+  margin-right: 10px;
+}
+
+.logo:hover {
+  color: #FCA311;
+}
+
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+}
+
+.menu li {
+  margin-left: 20px;
+}
+
+.menu a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.menu a:hover {
+  color: #FCA311;
+}
+
+.menu .botao-menu {
+  background-color: #FCA311;
+  color: #14213D;
+  padding: 6px 18px;
+  border-radius: 20px;
+}
+
+.menu .botao-menu:hover {
+  background-color: #FFFFFF;
+  color: #14213D;
+}
+
+/* ---------- Botão ---------- */
+
+.botao {
+  display: inline-block;
+  background-color: #2A9D8F;
+  color: #FFFFFF;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.botao:hover {
+  background-color: #14213D;
+  color: #FFFFFF;
+}
+
+/* ---------- Destaque (início) ---------- */
+
+.destaque {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 5%;
+  background-color: #F1F5F9;
+}
+
+.destaque-texto {
+  flex: 1 1 380px;
+  padding-right: 30px;
+}
+
+.destaque-texto p {
+  font-size: 1.1em;
+  margin-bottom: 28px;
+}
+
+.destaque-figura {
+  flex: 1 1 380px;
+}
+
+.destaque-figura img {
+  border-radius: 20px;
+  border: 6px solid #FCA311;
+}
+
+/* ---------- Seções ---------- */
+
+.secao {
+  padding: 60px 5%;
+}
+
+.secao-clara {
+  background-color: #F1F5F9;
+}
+
+/* ---------- Como funciona (passos) ---------- */
+
+.passos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  list-style: none;
+}
+
+.passo {
+  text-align: center;
+  padding: 24px 16px;
+  border: 2px solid #FCA311;
+  border-radius: 16px;
+}
+
+.passo .material-icons {
+  font-size: 48px;
+  color: #E76F51;
+  margin-bottom: 8px;
+}
+
+/* ---------- Cartões dos cursos ---------- */
+
+.cartoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.cartao {
+  flex: 1 1 280px;
+  max-width: 360px;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  overflow: hidden;
+  padding-bottom: 16px;
+  border: 1px solid #DCE3EC;
+}
+
+.cartao figcaption {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.3em;
+  font-weight: 700;
+  color: #14213D;
+  padding: 12px 16px 4px;
+}
+
+.cartao p {
+  padding: 4px 16px;
+}
+
+.etiqueta {
+  display: inline-block;
+  background-color: #FCA311;
+  color: #14213D;
+  font-size: 0.8em;
+  font-weight: 600;
+  padding: 2px 10px;
+  border-radius: 10px;
+}
+
+/* ---------- ODS 9 ---------- */
+
+.ods {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.ods h2 {
+  text-align: left;
+}
+
+.ods-texto {
+  flex: 2 1 400px;
+}
+
+.ods-texto p {
+  margin-bottom: 16px;
+}
+
+.lista-ods {
+  list-style: none;
+  margin-bottom: 16px;
+}
+
+.lista-ods li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.lista-ods .material-icons {
+  color: #2A9D8F;
+  margin-right: 10px;
+}
+
+.numeros {
+  flex: 1 1 250px;
+  background-color: #14213D;
+  color: #FFFFFF;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.numeros h3 {
+  color: #FCA311;
+  margin-bottom: 16px;
+}
+
+.numeros dt {
+  font-size: 2.2em;
+  font-weight: 700;
+  color: #FCA311;
+}
+
+.numeros dd {
+  margin-bottom: 12px;
+}
+
+/* ---------- Rodapé ---------- */
+
+.rodape {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 40px 5%;
+  background-color: #14213D;
+  color: #FFFFFF;
+}
+
+.rodape h3 {
+  color: #FCA311;
+}
+
+.rodape a {
+  color: #FFFFFF;
+}
+
+.rodape a:hover {
+  color: #FCA311;
+}
+
+.rodape-coluna {
+  flex: 1 1 220px;
+}
+
+.rodape .material-icons {
+  font-size: 18px;
+  vertical-align: middle;
+  color: #FCA311;
+}
+
+.rodape-simples {
+  justify-content: center;
+  padding: 20px 5%;
+}
+
+/* ---------- Páginas de login e cadastro ---------- */
+
+.pagina-form {
+  background-color: #F1F5F9;
+}
+
+.conteudo-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 50px 5%;
+}
+
+.caixa-form {
+  flex: 0 1 440px;
+  background-color: #FFFFFF;
+  padding: 32px;
+  border-radius: 16px;
+  border-top: 6px solid #FCA311;
+}
+
+.caixa-form h1 {
+  font-size: 2em;
+  margin-bottom: 4px;
+}
+
+.caixa-form form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.caixa-form label {
+  font-weight: 600;
+  color: #14213D;
+  margin-bottom: 4px;
+}
+
+.caixa-form input,
+.caixa-form select,
+.caixa-form textarea {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 1em;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #CCCCCC;
+  border-radius: 8px;
+}
+
+.caixa-form .botao {
+  margin-top: 8px;
+}
+
+.troca-form {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.figura-form {
+  flex: 0 1 400px;
+  text-align: center;
+}
+
+.figura-form img {
+  border-radius: 20px;
+}
+
+.figura-form figcaption {
+  margin-top: 12px;
+  font-weight: 600;
+  color: #14213D;
+}

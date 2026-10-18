@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Conecta Procópio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="pagina-form">
+
+  <header class="cabecalho">
+    <a href="index.html" class="logo">
+      <img src="figs/logo.svg" alt="Logo da Conecta Procópio: um computador sorrindo" width="48" height="48">
+      <span>Conecta Procópio</span>
+    </a>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Página inicial</a></li>
+        <li><a href="cadastro.html" class="botao-menu">Cadastrar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="conteudo-form">
+    <section class="caixa-form">
+      <h1>Entrar</h1>
+      <p>Acesse sua conta para acompanhar seus cursos e pedidos.</p>
+
+      <form action="index.html" method="get">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" required>
+
+        <input type="submit" value="Entrar" class="botao">
+      </form>
+
+      <p class="troca-form">Ainda não tem cadastro? <a href="cadastro.html">Cadastre-se</a></p>
+    </section>
+
+    <figure class="figura-form">
+      <img src="figs/internet.svg" alt="Ilustração de um monitor com um escudo de segurança" width="400" height="300">
+      <figcaption>Bem-vindo de volta!</figcaption>
+    </figure>
+  </main>
+
+  <footer class="rodape rodape-simples">
+    <p>Conecta Procópio – Projeto 1 de Programação Web Front-End (UTFPR)</p>
+  </footer>
+
+</body>
+</html>

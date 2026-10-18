@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro | Conecta Procópio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="pagina-form">
+
+  <header class="cabecalho">
+    <a href="index.html" class="logo">
+      <img src="figs/logo.svg" alt="Logo da Conecta Procópio: um computador sorrindo" width="48" height="48">
+      <span>Conecta Procópio</span>
+    </a>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Página inicial</a></li>
+        <li><a href="login.html" class="botao-menu">Entrar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="conteudo-form">
+    <section class="caixa-form">
+      <h1>Cadastro</h1>
+      <p>Cadastre-se para receber um computador ou se inscrever em um curso.</p>
+
+      <form action="login.html" method="get">
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(43) 90000-0000" required>
+
+        <label for="nascimento">Data de nascimento</label>
+        <input type="date" id="nascimento" name="nascimento" required>
+
+        <label for="interesse">Tenho interesse em</label>
+        <select id="interesse" name="interesse">
+          <option value="computador">Receber um computador</option>
+          <option value="curso" selected>Fazer um curso</option>
+          <option value="voluntario">Ser voluntário</option>
+          <option value="doacao">Doar equipamentos</option>
+        </select>
+
+        <label for="mensagem">Conte um pouco sobre você</label>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="30" placeholder="Ex.: sou estudante e não tenho computador em casa"></textarea>
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" required>
+
+        <input type="submit" value="Cadastrar" class="botao">
+      </form>
+
+      <p class="troca-form">Já tem cadastro? <a href="login.html">Faça login</a></p>
+    </section>
+
+    <figure class="figura-form">
+      <img src="figs/informatica.svg" alt="Ilustração de um monitor com pastas e janelas" width="400" height="300">
+      <figcaption>Seu primeiro passo no mundo digital.</figcaption>
+    </figure>
+  </main>
+
+  <footer class="rodape rodape-simples">
+    <p>Conecta Procópio – Projeto 1 de Programação Web Front-End (UTFPR)</p>
+  </footer>
+
+</body>
+</html>
